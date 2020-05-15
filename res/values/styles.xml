@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BigButton">
+        <item name="android:layout_width">120dip</item>
+        <item name="android:layout_height">120dip</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textSize">15dip</item>
+        <item name="android:padding">20dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/btn_default</item>
+    </style>
+
+    <style name="ColoredText">
+        <item name="android:textColor">#596A72</item>
+    </style>
+
+    <style name="ButtonText"> 
+        <item name="android:layout_width">120dip</item>
+        <item name="android:layout_height">120dip</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+
+    <style name="PreferencesTheme">
+        
+        <item name="android:background">#A4A4A4</item>
+    </style>
+
+</resources>

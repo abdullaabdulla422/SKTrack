@@ -1,0 +1,2 @@
+include ':vitamio', ':badelfgps'
+rootProject.name = 'SKTrack'

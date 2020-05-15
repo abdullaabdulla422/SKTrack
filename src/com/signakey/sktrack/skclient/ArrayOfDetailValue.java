@@ -1,0 +1,50 @@
+package com.signakey.sktrack.skclient;
+
+import java.util.Hashtable;
+
+import org.ksoap2.serialization.KvmSerializable;
+import org.ksoap2.serialization.PropertyInfo;
+import org.ksoap2.serialization.SoapSerializationEnvelope;
+
+import android.util.Log;
+
+public class ArrayOfDetailValue extends BaseObject implements KvmSerializable{
+public Class<com.signakey.sktrack.skclient.DetailValue> Value[];
+	
+
+
+	@Override
+	public Object getProperty(int info) {
+		
+		return Value[info];
+	}
+
+	@Override
+	public int getPropertyCount() {
+		
+		return 1;
+	}
+
+	@Override
+	public void getPropertyInfo(int arg0, @SuppressWarnings("rawtypes") Hashtable arg1, PropertyInfo info) {
+		// TODO Auto-generated method stub
+    	Log.i("SKScanner", "ArrayofDemoItem: " );
+        info.name = "DetailData";
+        info.type = DetailValue.class;
+        return ;
+	} 
+
+	@SuppressWarnings("unchecked") 
+	@Override
+	public void setProperty(int info, Object arg1) {
+		
+		Value[info] = (Class<com.signakey.sktrack.skclient.DetailValue>) arg1;
+	}
+    public void register(SoapSerializationEnvelope envelope) {
+        envelope.addMapping(NAMESPACE, "ArrayOfDetailValue", this.getClass());
+//        new MediaFile().register(envelope);
+    }
+
+}
+
+

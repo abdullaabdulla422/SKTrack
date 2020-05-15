@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="gps">
+        <item>No GPS</item>
+        <item>Phone GPS</item>
+        <item>Bad Elf GPS</item>
+    </string-array>
+    <string-array name="gpsvalues">
+        <item>No GPS</item>
+        <item>Phone GPS</item>
+        <item>Bad Elf GPS</item>
+    </string-array>
+    <string-array name="code_type_entries">
+        <item>SignaKey</item>
+        <item>Standard</item>
+    </string-array>
+    <string-array name="code_type_entryvalues">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="symbol_modes_entries">
+        <item>Y</item>
+        <item>V</item>
+    </string-array>
+    <string-array name="symbol_modes_entryvalues">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="bg_mode_entries">
+        <item>Black on white</item>
+        <item>White on black</item>
+        <item>Auto</item>
+    </string-array>
+    <string-array name="bg_mode_entryvalues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+</resources>

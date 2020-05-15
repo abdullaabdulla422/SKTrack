@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+  <ImageView
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/header" />
+   <Button
+        android:id="@+id/btnbackview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="3dp"
+        
+       
+       
+        android:background="@drawable/btn_3dbluedefault"
+       
+        android:text="Finish"
+        android:textColor="@android:color/white" />
+   <Button
+        android:id="@+id/btn_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="5dip"
+        android:background="@drawable/btn_info" />
+    
+   <TextView
+       android:id="@+id/gendbview"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerHorizontal="true"
+       android:layout_below="@+id/header"
+       android:layout_margin="10dip"
+       android:gravity="center"
+       android:text="@string/resultgendb"
+       android:textSize="12dp"
+       android:typeface="monospace" />
+   
+   
+
+</RelativeLayout>

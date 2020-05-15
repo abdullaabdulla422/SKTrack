@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+
+    <string name="hello">Hello World, skdemo!</string>
+    <string name="app_name">SKTrack</string>
+    <string name="version">1.0.A</string>
+
+    <string name="app_info">Copyright \u00A9 2020\nSignaKey LLC. All rights reserved.</string>
+    <string name="base_dir">Engine Validation</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </string>
+    <string name="cant_auth_because_not_loggedin">Can not authenticate key because user is not logged in.</string>
+    <string name="cant_save_key">Can not save key to history.</string>
+    <string name="cant_save_image">Can not save image to history.</string>
+    <string name="unsupported_image_format">Unsupported image format.</string>
+    <string name="cam_feature_supported">Enabled</string>
+    <string name="cam_feature_not_supported">Not available</string>
+    <string name="about_weburl">www.signakey.com</string>
+    <string name="logodes"></string>
+    <string name="headerdes"></string>
+    <string name="setting">Settings</string>
+    <string name="msg_default_status">Place barcode in window</string>
+    <string name="media">Media</string>
+    <string name="refersh">Refersh</string>
+    <string name="cam">Scan cam</string> 
+    <string name="img">Scan img</string>
+    <string name="pub">Pub Media</string>
+    <string name="to">TODO</string>
+    <string name="con">Con Media</string>  
+    <string name="res">Res Media</string>
+    <string name="media2">Media2</string>
+    <string name="sing">SignaKey</string>
+    <string name="zoomnone">None</string>
+    <string name="media1">Media1</string>
+    <string name="media3">Media3</string>
+    <string name="media4">Media4</string>
+    <string name="media5">Media5</string>
+    <string name="media6">Media6</string>
+    <string name="pri">Pri Media</string>
+    <string name ="resultgendb">resultgendb</string>
+
+</resources>

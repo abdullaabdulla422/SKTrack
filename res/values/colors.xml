@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    
+	<color name="transparent">#00000000</color>
+	<color name="viewfinder_frame">#ff000000</color>
+	<color name="viewfinder_laser">#ffff0000</color>
+	<color name="viewfinder_mask">#60000000</color>
+	<color name="background_two">#00788F</color>
+	<color name="background">#00A7C5</color>
+
+
+
+	<color name="black">#000000</color>
+
+	<color name="white">#ffffff</color>
+	<color name="white_15_percent">#26ffffff</color>
+	<color name="white_30_percent">#4Dffffff</color>
+
+
+	<color name="main_color_grey_300">@color/material_grey_300</color>
+
+	<color name="actionbar_opacity">#33000000</color>
+	<color name="grey">#EEEEEE</color>
+	<color name="material_blue">#007AE0</color>
+	<color name="material_blue_800_new">#007AFF</color>
+	<color name="material_blue_800">#007AE0</color>
+</resources>

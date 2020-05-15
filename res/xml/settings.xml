@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="SignaKey account" >
+        <EditTextPreference
+            android:defaultValue="SignaKey"
+            android:dialogTitle="Company"
+            android:singleLine="true"
+            android:key="company"
+            android:title="Company" />
+        <EditTextPreference
+            android:defaultValue=""
+            android:dialogTitle="Account"
+            android:singleLine="true"
+            android:key="account"
+            android:title="Account" />
+        <EditTextPreference
+            android:defaultValue=""
+            android:dialogTitle="Username"
+            android:singleLine="true"
+            android:key="username"
+            android:title="Username" />
+        <EditTextPreference
+            android:defaultValue=""
+            android:dialogTitle="Password"
+            android:key="password"
+            android:password="true"
+            android:singleLine="true"
+            android:title="Password" />
+
+        <ListPreference
+            android:defaultValue=""
+            android:dialogTitle="Mode"
+            android:entries="@array/gps"
+            android:id="@+id/gps"
+            android:entryValues="@array/gpsvalues"
+            android:key="gps"
+            android:summary=""
+            android:title="GPS" />
+        <EditTextPreference
+            android:defaultValue=""
+            android:dialogTitle="LocationID"
+            android:singleLine="true"
+            android:key="locationid"
+            android:title="LocationID" />
+        <EditTextPreference
+        android:defaultValue=""
+        android:dialogTitle="TaskID"
+        android:singleLine="true"
+        android:key="taskid"
+        android:title="TaskID" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="SignaKey misc." >
+        <ListPreference
+            android:defaultValue="1"
+            android:dialogTitle="SignaKey symbol"
+            android:entries="@array/symbol_modes_entries"
+            android:entryValues="@array/symbol_modes_entryvalues"
+            android:key="signakey_symbol"
+            android:title="SignaKey symbol" />
+        <ListPreference
+            android:defaultValue="1"
+            android:dialogTitle="SignaKey background"
+            android:entries="@array/bg_mode_entries"
+            android:entryValues="@array/bg_mode_entryvalues"
+            android:key="signakey_bg_mode"
+            android:title="SignaKey background" />
+    </PreferenceCategory>
+'
+    <PreferenceCategory android:title="Misc" >
+
+
+        <ListPreference
+            android:defaultValue="1"
+            android:dialogTitle="Mode"
+            android:entries="@array/code_type_entries"
+            android:entryValues="@array/code_type_entryvalues"
+            android:key="mode"
+            android:title="Mode" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="macro"
+            android:title="Try to use macro focus" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="beep" 
+            android:title="Play beep" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="vibrate"
+            android:title="Vibrate" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:id="@+id/switchlog"
+            android:key="logger"
+            android:title="Log" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="SignaKey Return." >
+               <Preference
+            android:id="@+id/preferences1"
+            android:key="button"
+            android:title="Return" />
+ 
+    </PreferenceCategory>
+
+</PreferenceScreen>

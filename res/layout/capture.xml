@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <SurfaceView
+        android:id="@+id/preview_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:background="@color/transparent" >
+    </SurfaceView>
+
+    <com.signakey.sktrack.ViewfinderView
+        android:id="@+id/viewfinder_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/transparent" >
+    </com.signakey.sktrack.ViewfinderView>
+
+    <LinearLayout
+        android:id="@+id/format_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="4dip" >
+
+        <TextView
+            android:id="@+id/barcodeformat_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="4dip"
+            android:textSize="14sp" >
+        </TextView>
+    </LinearLayout>
+
+    <TextView   
+        android:id="@+id/status_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@color/transparent"
+        android:text="@string/msg_default_status"
+        android:textSize="14sp" >
+    </TextView>
+
+</FrameLayout>

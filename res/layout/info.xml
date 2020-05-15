@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff" >
+
+    <ImageView
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/headerdes"
+        android:background="@drawable/header" />
+
+    <TextView
+        android:id="@+id/app_name"
+        style="@style/ColoredText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="10dip"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/app_name"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/logodes"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/app_info"
+        style="@style/ColoredText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_name"
+        android:gravity="center"
+        android:text="@string/app_info"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="6dp"
+            android:background="@drawable/line"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

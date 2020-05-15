@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SKTrack.iml" filepath="$PROJECT_DIR$/SKTrack.iml" group="SKTrack" />
+      <module fileurl="file://$PROJECT_DIR$/badelfgps/badelfgps.iml" filepath="$PROJECT_DIR$/badelfgps/badelfgps.iml" group="SKTrack/badelfgps" />
+      <module fileurl="file://$PROJECT_DIR$/vitamio/vitamio.iml" filepath="$PROJECT_DIR$/vitamio/vitamio.iml" group="SKTrack/vitamio" />
+    </modules>
+  </component>
+</project>

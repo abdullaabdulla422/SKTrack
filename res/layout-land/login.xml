@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <TextView
+        android:id="@+id/textcompany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="70dp"
+        android:text="Company"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/editTextcompany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textcompany"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/textcompany"
+        android:ems="10"
+        android:hint="Enter company"
+        android:inputType="text" >
+
+        <requestFocus android:layout_width="wrap_content" />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textcompany"
+        android:layout_below="@+id/textcompany"
+        android:layout_marginTop="40dp"
+        android:text="Account"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/editTextaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textaccount"
+        android:layout_alignLeft="@+id/editTextcompany"
+        android:ems="10"
+        android:hint="Enter account"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/textusername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textaccount"
+        android:layout_below="@+id/textaccount"
+        android:layout_marginTop="40dp"
+        android:text="User Name"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/editTextusername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textusername"
+        android:layout_alignLeft="@+id/editTextaccount"
+        android:ems="10"
+        android:hint="Enter username"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/textpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textusername"
+        android:layout_below="@+id/textusername"
+        android:layout_marginTop="40dp"
+        android:text="Password"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/editTextpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textpassword"
+        android:layout_alignLeft="@+id/editTextusername"
+        android:ems="10"
+        android:hint="Enter password"
+        android:inputType="textPassword" />
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textpassword"
+        android:layout_below="@+id/textpassword"
+        android:layout_marginTop="40dp" >
+
+        <Button
+            android:id="@+id/logonFormBTLogon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+            android:layout_weight="0.5"
+            android:text="Login" />
+
+        <Button
+            android:id="@+id/logonFormBTCancel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_weight="0.5"
+            android:text="Cancel"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

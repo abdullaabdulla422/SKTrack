@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.signakey.skscanner"
+    android:versionCode="13"
+    android:versionName="5.2" >
+  
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="22" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.camera.flash" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+ 
+    <!-- Network State Permissions -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <supports-screens android:anyDensity="true" />
+
+    <application
+        android:clearTaskOnLaunch="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" android:killAfterRestore="true" android:fullBackupOnly="true">
+        <activity android:name=".SKScanner" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ScanCamera"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Settings" >
+        </activity>
+        <activity android:name=".CaptureActivity" >
+        </activity>
+        <activity android:name=".Info" >
+        </activity>
+        <activity android:name=".KeyViewer" >
+        </activity>
+        <activity android:name=".Media" >
+        </activity>
+        <activity android:name=".MediaFiles" >
+        </activity>
+        <activity android:name=".PriMedia" >
+        </activity>
+        <activity android:name=".ResMedia" >
+        </activity>
+        <activity android:name=".ConMedia" >
+        </activity>
+         <activity android:name=".GendbResult" >
+        </activity>
+    </application>
+
+    <!-- <uses-sdk android:minSdkVersion="8" /> -->
+
+</manifest>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frame_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:orientation="vertical" >
+
+    <SurfaceView
+        android:id="@+id/surface_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </SurfaceView>
+
+    <!--
+            <SeekBar  
+                android:id="@+id/level_seekbar"  
+                android:layout_width="fill_parent"  
+                android:layout_height="match_parent"  
+                android:layout_marginLeft="40dip"  
+                android:layout_marginRight="40dip"  
+                android:layout_gravity="center"  
+               
+                
+            />
+    -->
+    <TextView
+        android:id="@+id/received_data"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="100dp"
+        android:text="received data"
+        android:textColor="#fff"
+        android:textSize="17dp"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/txt_latlong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="80dp"
+        android:text="latlong"
+        android:textColor="#fff"
+        android:textSize="17dp"
+        />
+
+    <TextView
+        android:id="@+id/StateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="60dp"
+        android:text="@string/badElfGpsServiceState"
+        android:textColor="#fff"
+        android:textSize="17dp"
+        />
+
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/listView"
+        android:visibility="gone"
+        />
+
+    <Button
+        android:id="@+id/connect_disconnect_button"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_gravity="bottom|center"
+        android:background="@color/background_two"
+        android:text="Get GPS"
+
+        android:layout_marginBottom="10dp"
+        android:textColor="#fff"
+
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/left_background"
+        android:layout_width="120dp"
+        android:visibility="gone"
+
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:contentDescription="@string/to" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@drawable/camera_shape_rectangle"
+        android:layout_margin="70dp"
+        >
+
+        <ImageView
+            android:id="@+id/center_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:contentDescription="@string/logodes" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/right_background"
+        android:layout_width="120dp"
+        android:visibility="gone"
+
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:contentDescription="@string/logodes" />
+
+    <TextView
+        android:id="@+id/zoomtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:layout_margin="7dp"
+        android:visibility="gone"
+        android:text="Zoom:"
+        android:textColor="#BEBEBE"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/zoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|top|right"
+        android:visibility="gone"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="9dp"
+        android:text="@string/zoomnone"
+        android:textColor="#BEBEBE"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:layout_margin="7dip"
+        android:text="@string/sing"
+        android:visibility="gone"
+        android:textColor="#BEBEBE"
+        android:textSize="20sp" />
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="13dp"
+        android:max="20"
+        android:progress="0" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton1"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="3dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/bgtoggle"
+        android:button="@null"
+        android:textOff=""
+        android:textOn="" />
+    
+</FrameLayout>
